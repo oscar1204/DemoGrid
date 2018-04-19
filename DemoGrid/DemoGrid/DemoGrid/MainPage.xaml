@@ -4,8 +4,69 @@
              xmlns:local="clr-namespace:DemoGrid"
              x:Class="DemoGrid.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Grid
+       ColumnSpacing="0"
+       RowSpacing="0">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button 
+            Text="btn1" 
+            BackgroundColor="Green"
+            ></Button>
+        <Button 
+            Text="btn2"
+            BackgroundColor="Brown"
+            Grid.Column="1"></Button>
+        <Button
+            Text="btn3" 
+            BackgroundColor="Aqua" 
+            Grid.Row="1"
+           ></Button>
+        <Button
+            Text="btn4"
+            BackgroundColor="Silver"
+            Grid.Row="1"
+            Grid.Column="1"></Button>
+        <Button
+            Text="btn5"
+            BackgroundColor="DeepSkyBlue"
+            Grid.Row="2"></Button>
+        <Button
+            Text="btn6"
+            BackgroundColor="DarkSlateGray"
+            Grid.Row="2"
+            Grid.Column="1"></Button>
+        <Button
+            Text="btn7"
+            BackgroundColor="DarkSlateBlue"
+            Grid.Row="3"
+            Grid.ColumnSpan="2"></Button>
+        <BoxView
+            BackgroundColor="DarkCyan"
+            Grid.Column="2"></BoxView>
+        <BoxView
+            BackgroundColor="DarkGoldenrod"
+            Grid.Row="1"
+            Grid.Column="2"></BoxView>
+        <BoxView
+            BackgroundColor="DarkGray"
+            Grid.Row="2"
+            Grid.Column="2"></BoxView>
+        <BoxView 
+            BackgroundColor="DarkOliveGreen"
+            Grid.Row="3"
+            Grid.Column="2"></BoxView>
+    </Grid>
+       
 
 </ContentPage>
